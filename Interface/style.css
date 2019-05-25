@@ -2,56 +2,97 @@
 
 body {
 	margin: 0;
-<<<<<<< HEAD
 	font-family: 'Montserrat', sans-serif;
 /*Kolor checkboxa: #A07BB4*/
-=======
-  font-family: 'Montserrat', sans-serif;
->>>>>>> 376575206dbe201770d017384b75dfd6ef1bc1ee
 }
-/*Kolor checkboxa: #A07BB4*/
 
 .container {}
 
-.container>hr {
-  border-bottom: none;
+.container > hr {
+	border-bottom: none;
 }
 
 .name {
-  text-align: center;
-  color: #4f4f4f;
-  font-weight: bold;
-  border-bottom: 1px solid #66B392;
+	text-align: center;
+	color: #4f4f4f;
+	font-weight: bold;
+	border-bottom: 1px solid #66B392;
 }
 
 .header {
-  position: relative;
-  background-color: #66B392;
+	position: relative;
+	background-color: #66B392;
 }
 
-.header>p {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: 0;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-weight: bold;
-  text-align: center;
-  vertical-align: middle;
+.header > p {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: 0;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
 }
-
+.flower {
+	width: 100vw;
+	min-height: 50px;
+	padding: 0;
+	margin: 0;
+	position: relative;
+	display: flex;
+}
+.flowerRow {
+	width: 90%;
+	height: auto;
+	padding: 0;
+	margin: 0;
+	float: left;
+}
 .flowerName {
-  color: #4f4f4f;
+	color: #4f4f4f;
 }
 
 .flowerType {
-  color: #828282;
+	color: #828282;
 }
 
 .todo {
-  color: #4f4f4f;
+	color: #4f4f4f;	
+	display: block;
+	position: relative;
+	cursor: pointer;
+}
+.todo input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+.checkToDo {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url('img/baseline-check_box_outline_blank-24px.svg');
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.todo input:checked ~ .checkToDo {
+	background-image: url('img/baseline-check_box-24px.svg');
+}
+.moveTo {
+	background-image: url('img/baseline-chevron_right-24px.svg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 10%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	float: left;
+	cursor: pointer;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -89,7 +130,12 @@ body {
   .todo {
     font-size: 14px;
     margin-left: 10px;
+	padding-left: 20px;
   }
+	.checkToDo {
+		height: 20px;
+		width: 20px;
+	}
 }
 
 /*Color checkboxa: #A07BB4*/
@@ -100,61 +146,13 @@ body {
 	* {
 		background-color: rgb(0, 255, 0);
 	}
-	.flower {
-		width: 100vw;
-		min-height: 50px;
-		padding: 0;
-		margin: 0;
-		position: relative;
-		display: flex;
-	}
-	.flowerRow {
-		width: 90%;
-		height: auto;
-		padding: 0;
-		margin: 0;
-		float: left;
-	}
-	.todo {		
-		position: relative;
-		height: 25px;
-	}
-	.todo p {
-		margin: 0;
-		padding: 0;
-		height: 100%;
-	}
-	.todo input {
-		position: absolute;
-		opacity: 0;
-		cursor: pointer;
-		height: 0;
-		width: 0;
-	}
-	.todo:hover input ~ .checkToDo {
-		background-color: #ccc;
+	.todo {	
+		font-size: 22px;
+		padding-left: 30px;
 	}
 	.checkToDo {
-		position: absolute;
-		top: 0;
-		left: 0;
-		height: 25px;
-		width: 25px;
-		background-image: url('img/baseline-check_box_outline_blank-24px.svg');
-		background-repeat: no-repeat;
-	}
-	.checkToDo:checked {
-		
-	}
-	.moveTo {
-		background-image: url('img/baseline-chevron_right-24px.svg');
-		background-repeat: no-repeat;
-		background-size: contain;
-		width: 10%;
-		height: auto;
-		margin: 0;
-		padding: 0;
-		float: left;
+		height: 30px;
+		width: 30px;
 	}
 }
 
