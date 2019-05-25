@@ -1,0 +1,53 @@
+.name {
+	text-align: center;
+	color: #4f4f4f;
+	font-weight: bold;
+	border-bottom: 1px solid #66B392;
+}
+
+.infoimg {
+	background-image: url('../../assets/flowers/Echeveria_Elegans_1_1200x1200.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	width: 90%;
+	margin-left: 5%;
+	padding: 0;
+	display: block;
+	background-position: center top;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+	.name {
+		width: 90%;
+		margin: 15px auto;
+		font-size: 19px;
+	}
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+	.name {
+		width: 90%;
+		margin: 15px auto;
+		font-size: 24px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	.name {
+		width: 90%;
+		margin: 15px auto;
+		font-size: 19px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	
+}
+
+@media screen only (min-width: 1025px) and (max-width: 1280px) {
+	
+}
+
+@media screen only (min-width: 1281px) {
+	
+}
