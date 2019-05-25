@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RouteTestComponent implements OnInit {
 
+
   constructor() { }
 
   ngOnInit() {

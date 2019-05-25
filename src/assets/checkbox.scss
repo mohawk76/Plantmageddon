@@ -1,0 +1,62 @@
+$primaryColor: #f1f1f1;
+$primaryBackground: #f1f1f1;
+$border : #c2c2c2;
+$inactiveElement: #f1f1f1;
+$color1:#66b392;
+$color2:#a07bb4;
+$bodyText:#222222;
+.flex-wrapper-checkbox {
+  position: relative;
+  display: flex;
+  white-space: pre-wrap;
+  border-bottom: 1px solid #f1f1f1;
+  input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    width: 24px;
+    height: 24px;
+    margin: 0;
+    z-index: 1;
+    cursor: pointer;
+  }
+  input:checked ~ .checkmark {
+    background-image: url("icons/checkbox.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    &:after {
+      position: absolute;
+      width: 13.25px;
+      height: 9.16px;
+      left: calc(50% - 13.25px / 2 - 0.21px);
+      top: calc(50% - 9.16px / 2 + 0.52px);
+      background-color: $primaryBackground;
+    }
+    label {
+      //font-style: 'semi'
+    }
+  }
+  .checkmark {
+    width: 24px;
+    min-width: 24px;
+    height: 24px;
+    min-height: 24px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    position: relative;
+    margin-right: 0.75em;
+    cursor: pointer;
+    background-image: url("icons/checkbox_empty.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  label {
+    color: $bodyText;
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
