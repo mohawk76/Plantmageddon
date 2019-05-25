@@ -5,7 +5,8 @@ import { InfopageComponent } from './infopage/infopage.component';
 
 const routes: Routes = [
 	{path: 'test', component: RouteTestComponent},
-	{path: 'info', component: InfopageComponent}
+  {path: 'info/:product', component: InfopageComponent}
+
 ];
 
 @NgModule({

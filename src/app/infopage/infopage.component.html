@@ -1,6 +1,14 @@
 <div class='name'>
-    ECHEVERIA
+  {{plant.name}}
 </div>
-<div class='infoimg'>
-	
+<div class='infoimg test-img' [style.backgroundImage]=" 'url('+plant.img+')'">
 </div>
+
+
+<div>{{plant.watering}}</div>
+<div>{{plant.sun}}</div>
+<div>{{plant.fertizalisng}}</div>
+<div>{{plant.description}}</div>
+<div>{{plant.comments.autor}}</div>
+<div>{{plant.comments.comment}}</div>
+<div>{{plant.comments.title}}</div>
