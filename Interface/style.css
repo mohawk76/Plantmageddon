@@ -1,15 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
-<<<<<<< HEAD
 body {
 	margin: 0;
 	font-family: 'Montserrat', sans-serif;
-=======
 /*Kolor checkboxa: #A07BB4*/
-
-body {
-  margin: 0;
-  font-family: 'Montserrat', sans-serif;
 }
 
 .container {}
@@ -41,7 +35,6 @@ body {
 
 .todo {
   color: #4f4f4f;
->>>>>>> 89e517b504a7eb5b94e5a737c20f2eaf4bc187d0
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -83,7 +76,6 @@ body {
 
 /*  */
 @media (min-width: 481px) and (max-width: 767px) {
-<<<<<<< HEAD
 	* {
 		background-color: rgb(0, 255, 0);
 	}
@@ -102,8 +94,33 @@ body {
 		margin: 0;
 		float: left;
 	}
+	.todo {		
+		position: relative;
+		height: 25px;
+	}
+	.todo p {
+		margin: 0;
+		padding: 0;
+		height: 100%;
+	}
+	.todo input {
+		position: absolute;
+		opacity: 0;
+		cursor: pointer;
+		height: 0;
+		width: 0;
+	}
+	.todo:hover input ~ .checkToDo {
+		background-color: #ccc;
+	}
 	.checkToDo {
-		
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 25px;
+		width: 25px;
+		background-image: url('img/baseline-check_box_outline_blank-24px.svg');
+		background-repeat: no-repeat;
 	}
 	.checkToDo:checked {
 		
@@ -112,17 +129,12 @@ body {
 		background-image: url('img/baseline-chevron_right-24px.svg');
 		background-repeat: no-repeat;
 		background-size: contain;
-		width: 10%; /*or your image's width*/
-		height: auto; /*or your image's height*/
+		width: 10%;
+		height: auto;
 		margin: 0;
 		padding: 0;
 		float: left;
 	}
-=======
-  * {
-    background-color: rgb(0, 255, 0);
-  }
->>>>>>> 89e517b504a7eb5b94e5a737c20f2eaf4bc187d0
 }
 
 /*  */
