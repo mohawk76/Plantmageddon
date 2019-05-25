@@ -1,19 +1,69 @@
+.container {}
+
+  .container>hr {
+    border-bottom: none;
+  }
+
+  .name {
+    text-align: center;
+    color: #4f4f4f;
+    font-weight: bold;
+  }
+
+  .header {
+    background-color: #66B392;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .flowerName {
+    color: #4f4f4f;
+  }
+
+  .flowerType {
+    color: #828282;
+  }
+
+  .todo{
+    color: #4f4f4f;
+  }
+
 @media (min-width: 320px) and (max-width: 480px) {
-	.container {
-    }
-    
-    .header{
-        background-color: #66B392;
-        width: 100%;
-        height: 40px;
-        color: white;
-        font-weight: bold;
-        text-align: center;
-        padding-top: 10px;
-    }
+  .container {}
 
-    .flower{
+  .container>hr {
+    width: 90%;
+    border-top: 1px solid #66B392;
+  }
 
-    }
+  .name {
+    width: 90%;
+    margin: 10px auto;
+    font-size: 19px;
+  }
+
+  .header {
+    width: 100%;
+    height: 35px;
+    padding-top: 5px;
+  }
+
+  .flower {
+    padding-left: 30px;
+  }
+
+  .flowerName {
+    font-size: 19px;
+  }
+
+  .flowerType {
+    font-size: 16px;
+  }
+
+  .todo{
+    font-size: 14px;
+  }
 }
-/*#A07BB4*/
+
+/*Color checkboxa: #A07BB4*/
