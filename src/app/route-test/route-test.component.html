@@ -1,54 +1,62 @@
-<div class="container">
-  <div class='name'>
-    TO DO
-  </div>
-  <div class='header'>
-    <p>Today</p>
-  </div>
-  <div class='flower'>
+<div class='name'>
+  TO DO
+</div>
+<div class='header'>
+  <p>Today</p>
+</div>
+<div class='flower'>
+  <div class='flowerRow'>
     <span class='flowerName'>
       Andrzejek
     </span>
     <span class='flowerType'>
       (Echeveria)
     </span>
-    <div class='todo'>
-      <app-checkbox [value1]="'watering'"></app-checkbox>
-    </div>
-    <img class='moveTo' src='' />
+    <label class='todo'>watering
+      <input type='checkbox'>
+      <span class="checkToDo"></span>
+    </label>
   </div>
-  <hr>
-  <div class='flower'>
+  <span class='moveTo'></span>
+</div>
+<hr>
+<div class='flower'>
+  <div class='flowerRow'>
     <span class='flowerName'>
       Olaf
     </span>
     <span class='flowerType'>
       (Orchid)
     </span>
-    <div class='todo'>
-      <app-checkbox [value1]="'watering'"></app-checkbox>
-    </div>
-    <div class='todo'>
-      <app-checkbox [value1]="'hydrogel'"></app-checkbox>
-    </div>
-    <img class='moveTo' src='' />
+    <label class='todo'>watering
+      <input type='checkbox'>
+      <span class="checkToDo"></span>
+    </label>
+    <label class='todo'>hydrogel
+      <input type='checkbox'>
+      <span class="checkToDo"></span>
+    </label>
   </div>
-  <div class='header'>
-    <p>Tomorrow</p>
-  </div>
-  <div class='flower'>
+  <span class='moveTo'></span>
+</div>
+<div class='header'>
+  <p>Tomorrow</p>
+</div>
+<div class='flower'>
+  <div class='flowerRow'>
     <span class='flowerName'>
       Benjamin
     </span>
     <span class='flowerType'>
       (Benjamin)
     </span>
-    <div class='todo'>
-      <app-checkbox [value1]="'watering'"></app-checkbox>
-    </div>
-    <img class='moveTo' src='' />
+    <label class='todo'>watering
+      <input type='checkbox'>
+      <span class="checkToDo"></span>
+    </label>
   </div>
-  <div class='footer'>
+  <span class='moveTo'></span>
+</div>
+<div class='footer'>
 
-  </div>
 </div>

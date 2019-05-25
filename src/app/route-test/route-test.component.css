@@ -1,6 +1,4 @@
-.container {}
-
-.container>hr {
+hr {
   border-bottom: none;
 }
 
@@ -28,6 +26,22 @@
   text-align: center;
 }
 
+.flower {
+  width: 100vw;
+  min-height: 50px;
+  padding: 0;
+  margin: 10px 0;
+  position: relative;
+  display: flex;
+}
+
+.flowerRow {
+  height: auto;
+  padding: 0;
+  margin: 0;
+  float: left;
+}
+
 .flowerName {
   color: #4f4f4f;
 }
@@ -38,10 +52,46 @@
 
 .todo {
   color: #4f4f4f;
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+
+.todo input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkToDo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url('../../assets/icons/checkbox_empty.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.todo input:checked~.checkToDo {
+  background-image: url('../../assets/icons/checkbox.svg');
+}
+
+.moveTo {
+  background-image: url('../../assets/icons/arrow-right.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 10%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  float: left;
+  cursor: pointer;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-  .container>hr {
+  hr {
     width: 90%;
     border-top: 1px solid #66B392;
   }
@@ -62,6 +112,10 @@
     margin-left: 30px;
   }
 
+  .flowerRow{
+    width: 80%;
+  }
+
   .flowerName {
     font-size: 19px;
   }
@@ -73,6 +127,12 @@
   .todo {
     font-size: 14px;
     margin-left: 10px;
+    padding-left: 20px;
+  }
+
+  .checkToDo {
+    height: 20px;
+    width: 20px;
   }
 }
 
@@ -113,4 +173,3 @@
 }
 
 /*Color checkboxa: #A07BB4*/
-

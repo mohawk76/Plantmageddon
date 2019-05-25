@@ -3,10 +3,6 @@
 body {
 	margin: 0;
 	font-family: 'Montserrat', sans-serif;
-<<<<<<< HEAD
-/*Kolor checkboxa: #A07BB4*/
-=======
->>>>>>> e9048189067d1df1827a4ae7903186c200ed8cf1
 }
 
 .container {}
@@ -39,6 +35,7 @@ body {
 	text-align: center;
 	vertical-align: middle;
 }
+
 .flower {
 	width: 100vw;
 	min-height: 50px;
@@ -47,6 +44,7 @@ body {
 	position: relative;
 	display: flex;
 }
+
 .flowerRow {
 	width: 90%;
 	height: auto;
@@ -54,6 +52,7 @@ body {
 	margin: 0;
 	float: left;
 }
+
 .flowerName {
 	color: #4f4f4f;
 }
