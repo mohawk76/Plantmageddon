@@ -1,33 +1,45 @@
 .container {}
 
-  .container>hr {
-    border-bottom: none;
-  }
+.container>hr {
+  border-bottom: none;
+}
 
-  .name {
-    text-align: center;
-    color: #4f4f4f;
-    font-weight: bold;
-  }
+.name {
+  text-align: center;
+  color: #4f4f4f;
+  font-weight: bold;
+  border-bottom: 1px solid #66B392;
+}
 
-  .header {
-    background-color: #66B392;
-    color: white;
-    font-weight: bold;
-    text-align: center;
-  }
+.header {
+  position: relative;
+  background-color: #66B392;
+}
 
-  .flowerName {
-    color: #4f4f4f;
-  }
+.header>p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+}
 
-  .flowerType {
-    color: #828282;
-  }
+.flowerName {
+  color: #4f4f4f;
+}
 
-  .todo{
-    color: #4f4f4f;
-  }
+.flowerType {
+  color: #828282;
+}
+
+.todo {
+  color: #4f4f4f;
+}
 
 @media (min-width: 320px) and (max-width: 480px) {
   .container {}
@@ -39,18 +51,18 @@
 
   .name {
     width: 90%;
-    margin: 10px auto;
+    margin: 15px auto;
     font-size: 19px;
   }
 
   .header {
     width: 100%;
     height: 35px;
-    padding-top: 5px;
+    margin-bottom: 10px;
   }
 
   .flower {
-    padding-left: 30px;
+    margin-left: 30px;
   }
 
   .flowerName {
@@ -61,8 +73,9 @@
     font-size: 16px;
   }
 
-  .todo{
+  .todo {
     font-size: 14px;
+    margin-left: 10px;
   }
 }
 
