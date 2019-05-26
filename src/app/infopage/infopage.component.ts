@@ -59,10 +59,8 @@ export class InfopageComponent implements OnInit {
 
   ngOnInit() {
     if (this.activeRoute.snapshot.paramMap.get('product')) {
-      debugger;
       this.activeRoute.url.subscribe(res => {
         this.productName = this.activeRoute.snapshot.paramMap.get('product');
-        debugger;
         if (this.productName === 'Andrzejek') {
           this.plant = this.Andrzejek;
         }
