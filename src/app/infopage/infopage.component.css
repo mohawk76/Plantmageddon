@@ -14,7 +14,6 @@
 	padding: 0;
 	display: block;
 	background-position: center center;
-	border-radius: 10px;
 	margin-bottom: 2%;
 }
 
@@ -33,9 +32,7 @@
 	display: inline-block;
 	width: 90%;
 	margin: 2% 5%;
-	padding-left: 30px;
 	position: relative;
-	line-height: 25px;
 }
 .infodetails span {
 	background-size: cover;
@@ -54,7 +51,8 @@
 	background-image: url('/assets/icons/spa.png');
 }
 .infodescription {
-	
+	width: 90%;
+	margin: 1% 5%;
 }
 
 @media (max-width: 320px) {
@@ -63,8 +61,16 @@
 		margin: 15px auto;
 		font-size: 14px;
 	}
+	.infoimg {
+		border-radius: 15px;
+	}
 	.test-img {
 		height: 150px;
+	}
+	.infodetails {
+		padding-left: 30px;
+		line-height: 25px;
+		font-size: 14px;
 	}
 	.infodetails span {
 		width: 25px;
@@ -77,12 +83,20 @@
 		margin: 15px auto;
 		font-size: 19px;
 	}
+	.infoimg {
+		border-radius: 20px;
+	}
 	.test-img {
 		height: 200px;
 	}
+	.infodetails {
+		padding-left: 25px;
+		line-height: 20px;
+		font-size: 19px;
+	}
 	.infodetails span {
-		width: 25px;
-		height: 25px;
+		width: 20px;
+		height: 20px;
 	}
 }
 
@@ -92,8 +106,16 @@
 		margin: 15px auto;
 		font-size: 24px;
 	}
+	.infoimg {
+		border-radius: 25px;
+	}
 	.test-img {
 		height: 250px;
+	}
+	.infodetails {
+		padding-left: 30px;
+		line-height: 25px;
+		font-size: 24px;
 	}
 	.infodetails span {
 		width: 25px;
@@ -107,12 +129,20 @@
 		margin: 15px auto;
 		font-size: 29px;
 	}
+	.infoimg {
+		border-radius: 30px;
+	}
 	.test-img {
 		height: 300px;
 	}
+	.infodetails {
+		padding-left: 35px;
+		line-height: 30px;
+		font-size: 29px;
+	}
 	.infodetails span {
-		width: 25px;
-		height: 25px;
+		width: 30px;
+		height: 30px;
 	}
 }
 
@@ -122,12 +152,20 @@
 		margin: 15px auto;
 		font-size: 34px;
 	}
+	.infoimg {
+		border-radius: 35px;
+	}
 	.test-img {
 		height: 350px;
 	}
+	.infodetails {
+		padding-left: 40px;
+		line-height: 35px;
+		font-size: 34px;
+	}
 	.infodetails span {
-		width: 25px;
-		height: 25px;
+		width: 35px;
+		height: 35px;
 	}
 }
 
@@ -137,12 +175,20 @@
 		margin: 15px auto;
 		font-size: 39px;
 	}
+	.infoimg {
+		border-radius: 40px;
+	}
 	.test-img {
 		height: 400px;
 	}
+	.infodetails {
+		padding-left: 45px;
+		line-height: 40px;
+		font-size: 39px;
+	}
 	.infodetails span {
-		width: 25px;
-		height: 25px;
+		width: 40px;
+		height: 40px;
 	}
 }
 
@@ -152,11 +198,19 @@
 		margin: 15px auto;
 		font-size: 44px;
 	}
+	.infoimg {
+		border-radius: 45px;
+	}
 	.test-img {
 		height: 450px;
 	}
+	.infodetails {
+		padding-left: 50px;
+		line-height: 45px;
+		font-size: 44px;
+	}
 	.infodetails span {
-		width: 25px;
-		height: 25px;
+		width: 45px;
+		height: 45px;
 	}
 }

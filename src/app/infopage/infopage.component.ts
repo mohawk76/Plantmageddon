@@ -31,7 +31,7 @@ export class InfopageComponent implements OnInit {
       title: 'Minions ipsum ti amooo'
     },
     sun: "sun, sun & sun",
-    img: "/assets/flowers/Echeveria_Elegans_1_1200x1200.jpg",
+    img: "/assets/flowers/Andrzejek.jpg",
     watering: "Watering and more watering",
     fertizalisng: 'Fertiliser',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id aliquet lectus. Donec fermentum mauris eu fermentum aliquet. Aenean gravida, felis quis semper volutpat, enim massa scelerisque lectus, ac dignissim lacus justo id velit.'
@@ -45,7 +45,21 @@ export class InfopageComponent implements OnInit {
     },
     name: 'Olaf',
     sun: "sun, sun & sun",
-    img: "/assets/flowers/echeveria-agavoides-lipstick-.jpg",
+    img: "/assets/flowers/Olaf.jpg",
+    watering: "Watering and more watering",
+    fertizalisng: 'Fertiliser',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id aliquet lectus. Donec fermentum mauris eu fermentum aliquet. Aenean gravida, felis quis semper volutpat, enim massa scelerisque lectus, ac dignissim lacus justo id velit.'
+  };
+  
+  private Benjamin: PLANT = {
+    comments: {
+      comment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id aliquet lectus. Donec fermentum mauris eu fermentum aliquet. Aenean gravida, felis quis semper volutpat, enim massa scelerisque lectus, ac dignissim lacus justo id velit. ',
+      autor: 'Angela',
+      title: 'Minions ipsum ti amooo'
+    },
+    name: 'Benjamin',
+    sun: "sun, sun & sun",
+    img: "/assets/flowers/Benjamin.jpg",
     watering: "Watering and more watering",
     fertizalisng: 'Fertiliser',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id aliquet lectus. Donec fermentum mauris eu fermentum aliquet. Aenean gravida, felis quis semper volutpat, enim massa scelerisque lectus, ac dignissim lacus justo id velit.'
@@ -66,6 +80,9 @@ export class InfopageComponent implements OnInit {
         }
         if (this.productName === 'Olaf') {
           this.plant = this.Olaf;
+        }
+        if (this.productName === 'Benjamin') {
+          this.plant = this.Benjamin;
         }
         console.log(this.plant, "this.productName");
       });
