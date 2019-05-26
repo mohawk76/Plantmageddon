@@ -4,7 +4,7 @@ import { RouteTestComponent } from './route-test/route-test.component';
 import { InfopageComponent } from './infopage/infopage.component';
 
 const routes: Routes = [
-	{path: 'test', component: RouteTestComponent},
+	{path: '', component: RouteTestComponent},
   {path: 'info/:product', component: InfopageComponent}
 
 ];
