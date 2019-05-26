@@ -13,15 +13,76 @@
 	margin-left: 5%;
 	padding: 0;
 	display: block;
-	background-position: center top;
+	background-position: center center;
 	border-radius: 10px;
+	margin-bottom: 2%;
 }
 
+
+.test-img {
+	background-size: cover;
+	max-height: 100%;
+	max-width: 100%;
+	margin: 0;
+	width: auto;
+	box-shadow: 0px 5px 5px 0 rgb(34, 34, 34);
+}
+
+.infodetails {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 90%;
+	margin: 2% 5%;
+	padding-left: 30px;
+	position: relative;
+	line-height: 25px;
+}
+.infodetails span {
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: block;
+	position: absolute;
+	left: 0;
+}
+.infodetails .wateringicon {
+	background-image: url('/assets/icons/waves.png');
+}
+.infodetails .sunicon {
+	background-image: url('/assets/icons/brightness.png');
+}
+.infodetails .fertizalisngicon {
+	background-image: url('/assets/icons/spa.png');
+}
+.infodescription {
+	
+}
+
+@media (max-width: 320px) {
+	.name {
+		width: 90%;
+		margin: 15px auto;
+		font-size: 14px;
+	}
+	.test-img {
+		height: 150px;
+	}
+	.infodetails span {
+		width: 25px;
+		height: 25px;
+	}
+}
 @media (min-width: 320px) and (max-width: 480px) {
 	.name {
 		width: 90%;
 		margin: 15px auto;
 		font-size: 19px;
+	}
+	.test-img {
+		height: 200px;
+	}
+	.infodetails span {
+		width: 25px;
+		height: 25px;
 	}
 }
 
@@ -31,32 +92,71 @@
 		margin: 15px auto;
 		font-size: 24px;
 	}
+	.test-img {
+		height: 250px;
+	}
+	.infodetails span {
+		width: 25px;
+		height: 25px;
+	}
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
 	.name {
 		width: 90%;
 		margin: 15px auto;
-		font-size: 19px;
+		font-size: 29px;
+	}
+	.test-img {
+		height: 300px;
+	}
+	.infodetails span {
+		width: 25px;
+		height: 25px;
 	}
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-
+	.name {
+		width: 90%;
+		margin: 15px auto;
+		font-size: 34px;
+	}
+	.test-img {
+		height: 350px;
+	}
+	.infodetails span {
+		width: 25px;
+		height: 25px;
+	}
 }
 
-@media screen only (min-width: 1025px) and (max-width: 1280px) {
-
+@media (min-width: 1025px) and (max-width: 1280px) {
+	.name {
+		width: 90%;
+		margin: 15px auto;
+		font-size: 39px;
+	}
+	.test-img {
+		height: 400px;
+	}
+	.infodetails span {
+		width: 25px;
+		height: 25px;
+	}
 }
 
-@media screen only (min-width: 1281px) {
-
-}
-.test-img{
-  max-height: 100%;
-  height: 250px;
-  width: 100%;
-  max-width: 100%;
-  margin-left: 0;
-  
+@media (min-width: 1281px) {
+	.name {
+		width: 90%;
+		margin: 15px auto;
+		font-size: 44px;
+	}
+	.test-img {
+		height: 450px;
+	}
+	.infodetails span {
+		width: 25px;
+		height: 25px;
+	}
 }

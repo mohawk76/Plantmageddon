@@ -1,14 +1,32 @@
 <div class='name'>
   {{plant.name}}
 </div>
-<div class='infoimg test-img' [style.backgroundImage]=" 'url('+plant.img+')'">
+<div class='infoimg'>
+	<div class='infoimg test-img' [style.backgroundImage]=" 'url('+plant.img+')'"></div>
 </div>
 
 
-<div class="">{{plant.watering}}</div>
-<div class="">{{plant.sun}}</div>
-<div class="">{{plant.fertizalisng}}</div>
-<div class="">{{plant.description}}</div>
-<div class="">{{plant.comments.autor}}</div>
-<div class="">{{plant.comments.comment}}</div>
-<div class="">{{plant.comments.title}}</div>
+<div class="infodetails">
+	<span class='wateringicon'></span>
+	{{plant.watering}}
+</div>
+<div class="infodetails">
+	<span class='sunicon'></span>
+	{{plant.sun}}
+</div>
+<div class="infodetails">
+	<span class='fertizalisngicon'></span>
+	{{plant.fertizalisng}}
+</div>
+<div class="infodescription">
+	{{plant.description}}
+</div>
+<div class="">
+	{{plant.comments.autor}}
+</div>
+<div class="">
+	{{plant.comments.comment}}
+</div>
+<div class="">
+	{{plant.comments.title}}
+</div>
