@@ -1,3 +1,7 @@
+.content {
+  padding-bottom: 80px;
+}
+
 hr {
   border-bottom: none;
 }
@@ -89,6 +93,22 @@ hr {
   cursor: pointer;
 }
 
+.bottom-panel {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #66B392
+}
+
+.profile-photo{
+  width: 50px;
+}
+
+.panel-icon{
+  color: white;
+}
+
 @media (min-width: 320px) and (max-width: 480px) {
   hr {
     width: 90%;
@@ -119,10 +139,14 @@ hr {
 
   .flowerName {
     font-size: 19px;
+    position: relative;
+    top: -15px;
   }
 
   .flowerType {
     font-size: 16px;
+    position: relative;
+    top: -15px;
   }
 
   .todo {
@@ -140,6 +164,13 @@ hr {
   .moveTo {
     height: 50px;
     width: 50px;
+  }
+
+  .panel-icon{
+    font-size: 48px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    margin-left: 17%;
   }
 }
 
@@ -320,60 +351,60 @@ hr {
 }
 
 @media (min-width: 1281px) {
-    hr {
-        width: 90%;
-        border-top: 1px solid #66B392;
-      }
-    
-      .name {
-        width: 90%;
-        margin: 45px auto;
-        font-size: 29px;
-      }
-    
-      .header {
-        width: 100%;
-        height: 65px;
-        margin-top: 25px;
-        margin-bottom: 20px;
-      }
-    
-      .header>p {
-        font-size: 28px;
-      }
-    
-      .flower {
-        margin-top: 45px;
-        padding-left: 30px;
-      }
-    
-      .flowerRow {
-        width: 90%;
-      }
-    
-      .flowerName {
-        font-size: 27px;
-      }
-    
-      .flowerType {
-        font-size: 24px;
-      }
-    
-      .todo {
-        margin-top: 25px;
-        margin-bottom: 20px;
-        font-size: 22px;
-        margin-left: 10px;
-        padding-left: 40px;
-      }
-    
-      .checkToDo {
-        height: 28px;
-        width: 28px;
-      }
-    
-      .moveTo {
-        height: 90px;
-        width: 90px;
-      }
+  hr {
+    width: 90%;
+    border-top: 1px solid #66B392;
+  }
+
+  .name {
+    width: 90%;
+    margin: 45px auto;
+    font-size: 29px;
+  }
+
+  .header {
+    width: 100%;
+    height: 65px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+  }
+
+  .header>p {
+    font-size: 28px;
+  }
+
+  .flower {
+    margin-top: 45px;
+    padding-left: 30px;
+  }
+
+  .flowerRow {
+    width: 90%;
+  }
+
+  .flowerName {
+    font-size: 27px;
+  }
+
+  .flowerType {
+    font-size: 24px;
+  }
+
+  .todo {
+    margin-top: 25px;
+    margin-bottom: 20px;
+    font-size: 22px;
+    margin-left: 10px;
+    padding-left: 40px;
+  }
+
+  .checkToDo {
+    height: 28px;
+    width: 28px;
+  }
+
+  .moveTo {
+    height: 90px;
+    width: 90px;
+  }
 }
